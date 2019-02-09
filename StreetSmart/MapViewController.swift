@@ -17,10 +17,18 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
+    let regionInMeters: Double = 250
     
     func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+    
+    func centerViewOnUserLocation() {
+        if let location = locationManager.location?.coordinate {
+            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+            mapView.setRegion(region, animated: true)
+        }
     }
     
     override func viewDidLoad() {
@@ -42,6 +50,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         switch CLLocationManager.authorizationStatus() {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
+            centerViewOnUserLocation()
         case .restricted:
             break
         case .denied:
@@ -50,20 +59,25 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             break
         case .authorizedWhenInUse:
             mapView.showsUserLocation = true
+            centerViewOnUserLocation()
+            locationManager.startUpdatingLocation()
             
         }
     }
-
+    
 }
 
 extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager:CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        guard let location = locations.last else { return }
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        mapView.setRegion(region, animated: true)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        //something
+        checkLocationAuthorization()
     }
     
 }
