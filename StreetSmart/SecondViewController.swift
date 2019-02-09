@@ -13,6 +13,15 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+                self.view.backgroundColor = UIColor(red: 57/255, green: 77/255, blue:254/255, alpha: 1)
+                
+        
+            
+            
+    
+
+
+
     }
 
 
