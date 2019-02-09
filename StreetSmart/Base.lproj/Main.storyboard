@@ -45,7 +45,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eWd-04-7kL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="kYM-SR-Z5G"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="pppppp" id="kYM-SR-Z5G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmT-Ej-fmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +82,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="MAP" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="mmmmmmm" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,8 +127,8 @@
     </scenes>
     <resources>
         <image name="FORM" width="18.75" height="18.75"/>
-        <image name="MAP" width="18.75" height="18.75"/>
         <image name="gear bois" width="18.75" height="18.75"/>
-        <image name="profile" width="18.75" height="18.75"/>
+        <image name="mmmmmmm" width="18.75" height="18.75"/>
+        <image name="pppppp" width="18.75" height="18.75"/>
     </resources>
 </document>
