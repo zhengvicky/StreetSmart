@@ -19,11 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch photo" translatesAutoresizingMaskIntoConstraints="NO" id="82W-Co-VU6">
-                                <rect key="frame" x="67" y="258" width="240" height="128"/>
+                                <rect key="frame" x="67" y="154" width="240" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-X6-xou">
-                                <rect key="frame" x="67" y="387" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-N1-pb2">
+                                <rect key="frame" x="80" y="333" width="214" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smart" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-X6-xou">
+                                <rect key="frame" x="80" y="416" width="214" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -33,10 +37,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
         <image name="launch photo" width="367" height="316"/>
+        <image name="smart" width="215" height="64"/>
+        <image name="street" width="220" height="67"/>
     </resources>
 </document>

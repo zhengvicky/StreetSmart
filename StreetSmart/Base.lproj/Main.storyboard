@@ -42,14 +42,65 @@
                     <view key="view" contentMode="scaleToFill" id="WnL-NQ-6HY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZw-N6-QvK">
+                                <rect key="frame" x="61" y="140" width="97" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3IY-29-KRp">
+                                <rect key="frame" x="61" y="192" width="97" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pu0-LK-gXi">
+                                <rect key="frame" x="61" y="246" width="209" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please fill in your information." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01K-Aq-xk9">
+                                <rect key="frame" x="61" y="89" width="211" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ENi-w7-QOC">
+                                <rect key="frame" x="139" y="38" width="97" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3IY-29-KRp" firstAttribute="top" secondItem="WnL-NQ-6HY" secondAttribute="top" constant="192" id="0Rk-3u-xyg"/>
+                            <constraint firstItem="eWd-04-7kL" firstAttribute="trailing" secondItem="3IY-29-KRp" secondAttribute="trailing" constant="217" id="Ghb-iN-XCV"/>
+                            <constraint firstItem="3IY-29-KRp" firstAttribute="leading" secondItem="UZw-N6-QvK" secondAttribute="leading" id="IPk-Bk-IRX"/>
+                            <constraint firstItem="3IY-29-KRp" firstAttribute="trailing" secondItem="UZw-N6-QvK" secondAttribute="trailing" id="RSL-8X-ZlU"/>
+                            <constraint firstItem="ENi-w7-QOC" firstAttribute="top" secondItem="eWd-04-7kL" secondAttribute="top" constant="18" id="UKg-hQ-jgF"/>
+                            <constraint firstItem="ENi-w7-QOC" firstAttribute="centerX" secondItem="WnL-NQ-6HY" secondAttribute="centerX" id="b3z-vO-wHM"/>
+                            <constraint firstItem="Pu0-LK-gXi" firstAttribute="top" secondItem="3IY-29-KRp" secondAttribute="bottom" constant="24" id="iWz-Cz-267"/>
+                            <constraint firstItem="eWd-04-7kL" firstAttribute="trailing" secondItem="Pu0-LK-gXi" secondAttribute="trailing" constant="105" id="tyD-8z-NP6"/>
+                            <constraint firstItem="3IY-29-KRp" firstAttribute="leading" secondItem="01K-Aq-xk9" secondAttribute="leading" id="uaW-xd-vPC"/>
+                            <constraint firstItem="01K-Aq-xk9" firstAttribute="top" secondItem="ENi-w7-QOC" secondAttribute="bottom" constant="8" symbolic="YES" id="ulo-16-2WP"/>
+                            <constraint firstItem="3IY-29-KRp" firstAttribute="leading" secondItem="eWd-04-7kL" secondAttribute="leading" constant="61" id="xyV-Rm-h9s"/>
+                            <constraint firstItem="Pu0-LK-gXi" firstAttribute="leading" secondItem="3IY-29-KRp" secondAttribute="leading" id="xzI-i9-TdU"/>
+                            <constraint firstItem="3IY-29-KRp" firstAttribute="top" secondItem="UZw-N6-QvK" secondAttribute="bottom" constant="22" id="yI8-Na-52S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eWd-04-7kL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="pppppp" id="kYM-SR-Z5G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmT-Ej-fmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="839"/>
+            <point key="canvasLocation" x="29.600000000000001" y="838.83058470764627"/>
         </scene>
         <!--Report Form-->
         <scene sceneID="wg7-f3-ORb">
@@ -210,7 +261,21 @@
                     <view key="view" contentMode="scaleToFill" id="euF-OJ-YbD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="d4i-Y6-1hL">
+                                <rect key="frame" x="123" y="32" width="128" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d4i-Y6-1hL" firstAttribute="leading" secondItem="Xtx-1u-CGp" secondAttribute="leading" constant="123" id="1AR-vs-AZH"/>
+                            <constraint firstItem="d4i-Y6-1hL" firstAttribute="centerX" secondItem="euF-OJ-YbD" secondAttribute="centerX" id="3VP-8y-wRE"/>
+                            <constraint firstItem="d4i-Y6-1hL" firstAttribute="top" secondItem="Xtx-1u-CGp" secondAttribute="top" constant="12" id="6sF-Vd-jSP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xtx-1u-CGp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear bois" id="ai3-Nq-rJi"/>
