@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		863448D3220F504C0043AA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863448D2220F504C0043AA6B /* AppDelegate.swift */; };
+		863448D5220F504C0043AA6B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863448D4220F504C0043AA6B /* FirstViewController.swift */; };
+		863448D7220F504C0043AA6B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863448D6220F504C0043AA6B /* SecondViewController.swift */; };
+		863448DA220F504C0043AA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863448D8220F504C0043AA6B /* Main.storyboard */; };
+		863448DC220F50500043AA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863448DB220F50500043AA6B /* Assets.xcassets */; };
+		863448DF220F50500043AA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863448DD220F50500043AA6B /* LaunchScreen.storyboard */; };
+		863448EA220F50500043AA6B /* StreetSmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863448E9220F50500043AA6B /* StreetSmartTests.swift */; };
+		863448F5220F50500043AA6B /* StreetSmartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863448F4220F50500043AA6B /* StreetSmartUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		863448E6220F50500043AA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 863448C7220F504C0043AA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 863448CE220F504C0043AA6B;
+			remoteInfo = StreetSmart;
+		};
+		863448F1220F50500043AA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 863448C7220F504C0043AA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 863448CE220F504C0043AA6B;
+			remoteInfo = StreetSmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		863448CF220F504C0043AA6B /* StreetSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		863448D2220F504C0043AA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		863448D4220F504C0043AA6B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		863448D6220F504C0043AA6B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		863448D9220F504C0043AA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		863448DB220F50500043AA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		863448DE220F50500043AA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		863448E0220F50500043AA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863448E5220F50500043AA6B /* StreetSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		863448E9220F50500043AA6B /* StreetSmartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetSmartTests.swift; sourceTree = "<group>"; };
+		863448EB220F50500043AA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863448F0220F50500043AA6B /* StreetSmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetSmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		863448F4220F50500043AA6B /* StreetSmartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetSmartUITests.swift; sourceTree = "<group>"; };
+		863448F6220F50500043AA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		863448CC220F504C0043AA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863448E2220F50500043AA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863448ED220F50500043AA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		863448C6220F504C0043AA6B = {
+			isa = PBXGroup;
+			children = (
+				863448D1220F504C0043AA6B /* StreetSmart */,
+				863448E8220F50500043AA6B /* StreetSmartTests */,
+				863448F3220F50500043AA6B /* StreetSmartUITests */,
+				863448D0220F504C0043AA6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		863448D0220F504C0043AA6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				863448CF220F504C0043AA6B /* StreetSmart.app */,
+				863448E5220F50500043AA6B /* StreetSmartTests.xctest */,
+				863448F0220F50500043AA6B /* StreetSmartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		863448D1220F504C0043AA6B /* StreetSmart */ = {
+			isa = PBXGroup;
+			children = (
+				863448D2220F504C0043AA6B /* AppDelegate.swift */,
+				863448D4220F504C0043AA6B /* FirstViewController.swift */,
+				863448D6220F504C0043AA6B /* SecondViewController.swift */,
+				863448D8220F504C0043AA6B /* Main.storyboard */,
+				863448DB220F50500043AA6B /* Assets.xcassets */,
+				863448DD220F50500043AA6B /* LaunchScreen.storyboard */,
+				863448E0220F50500043AA6B /* Info.plist */,
+			);
+			path = StreetSmart;
+			sourceTree = "<group>";
+		};
+		863448E8220F50500043AA6B /* StreetSmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				863448E9220F50500043AA6B /* StreetSmartTests.swift */,
+				863448EB220F50500043AA6B /* Info.plist */,
+			);
+			path = StreetSmartTests;
+			sourceTree = "<group>";
+		};
+		863448F3220F50500043AA6B /* StreetSmartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				863448F4220F50500043AA6B /* StreetSmartUITests.swift */,
+				863448F6220F50500043AA6B /* Info.plist */,
+			);
+			path = StreetSmartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		863448CE220F504C0043AA6B /* StreetSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 863448F9220F50500043AA6B /* Build configuration list for PBXNativeTarget "StreetSmart" */;
+			buildPhases = (
+				863448CB220F504C0043AA6B /* Sources */,
+				863448CC220F504C0043AA6B /* Frameworks */,
+				863448CD220F504C0043AA6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreetSmart;
+			productName = StreetSmart;
+			productReference = 863448CF220F504C0043AA6B /* StreetSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		863448E4220F50500043AA6B /* StreetSmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 863448FC220F50500043AA6B /* Build configuration list for PBXNativeTarget "StreetSmartTests" */;
+			buildPhases = (
+				863448E1220F50500043AA6B /* Sources */,
+				863448E2220F50500043AA6B /* Frameworks */,
+				863448E3220F50500043AA6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				863448E7220F50500043AA6B /* PBXTargetDependency */,
+			);
+			name = StreetSmartTests;
+			productName = StreetSmartTests;
+			productReference = 863448E5220F50500043AA6B /* StreetSmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		863448EF220F50500043AA6B /* StreetSmartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 863448FF220F50500043AA6B /* Build configuration list for PBXNativeTarget "StreetSmartUITests" */;
+			buildPhases = (
+				863448EC220F50500043AA6B /* Sources */,
+				863448ED220F50500043AA6B /* Frameworks */,
+				863448EE220F50500043AA6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				863448F2220F50500043AA6B /* PBXTargetDependency */,
+			);
+			name = StreetSmartUITests;
+			productName = StreetSmartUITests;
+			productReference = 863448F0220F50500043AA6B /* StreetSmartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		863448C7220F504C0043AA6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vicky Zheng";
+				TargetAttributes = {
+					863448CE220F504C0043AA6B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					863448E4220F50500043AA6B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 863448CE220F504C0043AA6B;
+					};
+					863448EF220F50500043AA6B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 863448CE220F504C0043AA6B;
+					};
+				};
+			};
+			buildConfigurationList = 863448CA220F504C0043AA6B /* Build configuration list for PBXProject "StreetSmart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 863448C6220F504C0043AA6B;
+			productRefGroup = 863448D0220F504C0043AA6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				863448CE220F504C0043AA6B /* StreetSmart */,
+				863448E4220F50500043AA6B /* StreetSmartTests */,
+				863448EF220F50500043AA6B /* StreetSmartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		863448CD220F504C0043AA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863448DF220F50500043AA6B /* LaunchScreen.storyboard in Resources */,
+				863448DC220F50500043AA6B /* Assets.xcassets in Resources */,
+				863448DA220F504C0043AA6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863448E3220F50500043AA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863448EE220F50500043AA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		863448CB220F504C0043AA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863448D7220F504C0043AA6B /* SecondViewController.swift in Sources */,
+				863448D3220F504C0043AA6B /* AppDelegate.swift in Sources */,
+				863448D5220F504C0043AA6B /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863448E1220F50500043AA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863448EA220F50500043AA6B /* StreetSmartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863448EC220F50500043AA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863448F5220F50500043AA6B /* StreetSmartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		863448E7220F50500043AA6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 863448CE220F504C0043AA6B /* StreetSmart */;
+			targetProxy = 863448E6220F50500043AA6B /* PBXContainerItemProxy */;
+		};
+		863448F2220F50500043AA6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 863448CE220F504C0043AA6B /* StreetSmart */;
+			targetProxy = 863448F1220F50500043AA6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		863448D8220F504C0043AA6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				863448D9220F504C0043AA6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		863448DD220F50500043AA6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				863448DE220F50500043AA6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		863448F7220F50500043AA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		863448F8220F50500043AA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		863448FA220F50500043AA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				INFOPLIST_FILE = StreetSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vicky.StreetSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		863448FB220F50500043AA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				INFOPLIST_FILE = StreetSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vicky.StreetSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		863448FD220F50500043AA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				INFOPLIST_FILE = StreetSmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vicky.StreetSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreetSmart.app/StreetSmart";
+			};
+			name = Debug;
+		};
+		863448FE220F50500043AA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				INFOPLIST_FILE = StreetSmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vicky.StreetSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreetSmart.app/StreetSmart";
+			};
+			name = Release;
+		};
+		86344900220F50500043AA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				INFOPLIST_FILE = StreetSmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vicky.StreetSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StreetSmart;
+			};
+			name = Debug;
+		};
+		86344901220F50500043AA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				INFOPLIST_FILE = StreetSmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vicky.StreetSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StreetSmart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		863448CA220F504C0043AA6B /* Build configuration list for PBXProject "StreetSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863448F7220F50500043AA6B /* Debug */,
+				863448F8220F50500043AA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		863448F9220F50500043AA6B /* Build configuration list for PBXNativeTarget "StreetSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863448FA220F50500043AA6B /* Debug */,
+				863448FB220F50500043AA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		863448FC220F50500043AA6B /* Build configuration list for PBXNativeTarget "StreetSmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863448FD220F50500043AA6B /* Debug */,
+				863448FE220F50500043AA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		863448FF220F50500043AA6B /* Build configuration list for PBXNativeTarget "StreetSmartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86344900220F50500043AA6B /* Debug */,
+				86344901220F50500043AA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 863448C7220F504C0043AA6B /* Project object */;
+}
