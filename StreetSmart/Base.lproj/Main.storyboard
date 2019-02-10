@@ -88,10 +88,18 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="save:" destination="2UR-60-3rD" eventType="touchUpInside" id="grA-6X-na6"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill in your information." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyh-Jn-BnP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please fill in your information." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyh-Jn-BnP">
                                 <rect key="frame" x="75" y="89" width="224" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COu-r5-1V4">
+                                <rect key="frame" x="133" y="338" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -100,15 +108,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3IY-29-KRp" firstAttribute="top" secondItem="WnL-NQ-6HY" secondAttribute="top" constant="192" id="0Rk-3u-xyg"/>
+                            <constraint firstItem="COu-r5-1V4" firstAttribute="centerX" secondItem="WnL-NQ-6HY" secondAttribute="centerX" id="3Jy-SL-LWn"/>
                             <constraint firstItem="eWd-04-7kL" firstAttribute="trailing" secondItem="3IY-29-KRp" secondAttribute="trailing" constant="217" id="Ghb-iN-XCV"/>
                             <constraint firstItem="3IY-29-KRp" firstAttribute="leading" secondItem="UZw-N6-QvK" secondAttribute="leading" id="IPk-Bk-IRX"/>
                             <constraint firstItem="3IY-29-KRp" firstAttribute="trailing" secondItem="UZw-N6-QvK" secondAttribute="trailing" id="RSL-8X-ZlU"/>
+                            <constraint firstItem="COu-r5-1V4" firstAttribute="centerX" secondItem="xyh-Jn-BnP" secondAttribute="centerX" id="Soe-GF-eT0"/>
                             <constraint firstItem="ENi-w7-QOC" firstAttribute="top" secondItem="eWd-04-7kL" secondAttribute="top" constant="18" id="UKg-hQ-jgF"/>
                             <constraint firstItem="gjf-pB-lXZ" firstAttribute="top" secondItem="Pu0-LK-gXi" secondAttribute="bottom" constant="24" id="VJL-a3-WVH"/>
+                            <constraint firstItem="COu-r5-1V4" firstAttribute="leading" secondItem="eWd-04-7kL" secondAttribute="leading" constant="133" id="aWh-3d-LTV"/>
                             <constraint firstItem="ENi-w7-QOC" firstAttribute="centerX" secondItem="WnL-NQ-6HY" secondAttribute="centerX" id="b3z-vO-wHM"/>
+                            <constraint firstItem="COu-r5-1V4" firstAttribute="top" secondItem="gjf-pB-lXZ" secondAttribute="bottom" constant="8" symbolic="YES" id="duh-P8-t4j"/>
                             <constraint firstItem="Pu0-LK-gXi" firstAttribute="top" secondItem="3IY-29-KRp" secondAttribute="bottom" constant="24" id="iWz-Cz-267"/>
                             <constraint firstItem="eWd-04-7kL" firstAttribute="trailing" secondItem="Pu0-LK-gXi" secondAttribute="trailing" constant="105" id="tyD-8z-NP6"/>
                             <constraint firstItem="gjf-pB-lXZ" firstAttribute="leading" secondItem="eWd-04-7kL" secondAttribute="leading" constant="170" id="x16-dT-knd"/>
+                            <constraint firstItem="COu-r5-1V4" firstAttribute="centerX" secondItem="WnL-NQ-6HY" secondAttribute="centerX" id="xh3-bL-F1e"/>
                             <constraint firstItem="3IY-29-KRp" firstAttribute="leading" secondItem="eWd-04-7kL" secondAttribute="leading" constant="61" id="xyV-Rm-h9s"/>
                             <constraint firstItem="Pu0-LK-gXi" firstAttribute="leading" secondItem="3IY-29-KRp" secondAttribute="leading" id="xzI-i9-TdU"/>
                             <constraint firstItem="3IY-29-KRp" firstAttribute="top" secondItem="UZw-N6-QvK" secondAttribute="bottom" constant="22" id="yI8-Na-52S"/>
@@ -116,6 +129,9 @@
                         <viewLayoutGuide key="safeArea" id="eWd-04-7kL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="pppppp" id="kYM-SR-Z5G"/>
+                    <connections>
+                        <outlet property="labell" destination="COu-r5-1V4" id="R9o-eJ-qjX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmT-Ej-fmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
