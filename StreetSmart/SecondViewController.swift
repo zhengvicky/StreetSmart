@@ -23,7 +23,5 @@ class SecondViewController: UIViewController {
 
 
     }
-
-
 }
 

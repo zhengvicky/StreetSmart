@@ -10,6 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
+class Annotation: NSObject, MKAnnotation {
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    var subtitle: String?
+    
+    init(coordinate: CLLocationCoordinate2D, title:String?, subtitle: String?) {
+        self.coordinate = coordinate
+        self.title = title
+        self.subtitle = subtitle
+        
+        super.init()
+    }
+}
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     
@@ -35,6 +48,15 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         checkLocationServices()
+        print(locationManager.location?.coordinate ?? 0)
+    }
+    
+    
+    @IBAction func reportCrime(_ sender: Any) {
+        mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        let Coordinate = CLLocationCoordinate2D(latitude: locationManager.location?.coordinate.latitude ?? 0, longitude: locationManager.location?.coordinate.longitude ?? 0)
+        let myAnnotation = Annotation(coordinate: Coordinate, title: "Crime", subtitle: "")
+        mapView.addAnnotation(myAnnotation)
     }
     
     func checkLocationServices() {
