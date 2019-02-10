@@ -57,6 +57,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let Coordinate = CLLocationCoordinate2D(latitude: locationManager.location?.coordinate.latitude ?? 0, longitude: locationManager.location?.coordinate.longitude ?? 0)
         let myAnnotation = Annotation(coordinate: Coordinate, title: "Crime", subtitle: "")
         mapView.addAnnotation(myAnnotation)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let reportViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        self.present(reportViewController, animated: true, completion: nil)
     }
     
     func checkLocationServices() {

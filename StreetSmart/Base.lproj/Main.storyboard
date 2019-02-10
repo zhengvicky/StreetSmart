@@ -29,6 +29,9 @@
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <action selector="reportCrime:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KKZ-D6-MkP"/>
+                                    <segue destination="8rJ-Kc-sve" kind="popoverPresentation" popoverAnchorView="zZU-FZ-GlX" id="k5m-Zw-8rG">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,7 +124,7 @@
         <!--Report Form-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="StreetSmart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="StreetSmart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +197,6 @@
                                 </state>
                                 <connections>
                                     <action selector="reportCrime:" destination="dde-xh-yNa" eventType="touchUpInside" id="sVh-Nx-TJ1"/>
-                                    <action selector="reportCrime:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="xWj-Yf-NoZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -241,7 +243,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <exit id="dde-xh-yNa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="824.79999999999995" y="479.91004497751129"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -254,7 +256,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="2UR-60-3rD" kind="relationship" relationship="viewControllers" id="JEi-XF-ppA"/>
                         <segue destination="vk3-82-dC8" kind="relationship" relationship="viewControllers" id="15o-vV-VWN"/>
                     </connections>
