@@ -23,5 +23,8 @@ class SecondViewController: UIViewController {
 
 
     }
+    @IBAction func submit(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
