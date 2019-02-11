@@ -10,6 +10,8 @@ import UIKit
 import MapKit
 import CoreLocation
 
+
+
 class Annotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
@@ -28,6 +30,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var reportButton: UIButton!
     
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 250
@@ -49,6 +52,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         checkLocationServices()
         print(locationManager.location?.coordinate ?? 0)
+        reportButton.layer.cornerRadius = 10
     }
     
     
@@ -57,10 +61,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let Coordinate = CLLocationCoordinate2D(latitude: locationManager.location?.coordinate.latitude ?? 0, longitude: locationManager.location?.coordinate.longitude ?? 0)
         let myAnnotation = Annotation(coordinate: Coordinate, title: "Crime", subtitle: "")
         mapView.addAnnotation(myAnnotation)
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let reportViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        self.present(reportViewController, animated: true, completion: nil)
     }
     
     func checkLocationServices() {

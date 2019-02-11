@@ -83,7 +83,6 @@
 		863448C6220F504C0043AA6B = {
 			isa = PBXGroup;
 			children = (
-				FD42E7CA220F6CB600919030 /* SettingsViewController.swift */,
 				863448D1220F504C0043AA6B /* StreetSmart */,
 				863448E8220F50500043AA6B /* StreetSmartTests */,
 				863448F3220F50500043AA6B /* StreetSmartUITests */,
@@ -104,11 +103,12 @@
 		863448D1220F504C0043AA6B /* StreetSmart */ = {
 			isa = PBXGroup;
 			children = (
+				FD42E7CA220F6CB600919030 /* SettingsViewController.swift */,
 				863448D2220F504C0043AA6B /* AppDelegate.swift */,
 				863448D4220F504C0043AA6B /* MapViewController.swift */,
 				863448D6220F504C0043AA6B /* SecondViewController.swift */,
-				863448D8220F504C0043AA6B /* Main.storyboard */,
 				FD42E7CE220F789000919030 /* ProfileViewController.swift */,
+				863448D8220F504C0043AA6B /* Main.storyboard */,
 				863448DB220F50500043AA6B /* Assets.xcassets */,
 				863448DD220F50500043AA6B /* LaunchScreen.storyboard */,
 				863448E0220F50500043AA6B /* Info.plist */,

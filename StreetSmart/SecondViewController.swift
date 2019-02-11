@@ -10,18 +10,16 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    
+    @IBOutlet var crimeDescription: UITextView!
+    @IBOutlet weak var submitButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-                self.view.backgroundColor = UIColor(red: 57/255, green: 77/255, blue:254/255, alpha: 1)
-                
+        crimeDescription.layer.cornerRadius = 10
+        submitButton.layer.cornerRadius = 10
         
-            
-            
-    
-
-
-
     }
     @IBAction func submit(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

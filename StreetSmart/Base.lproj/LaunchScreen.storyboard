@@ -18,26 +18,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch photo" translatesAutoresizingMaskIntoConstraints="NO" id="82W-Co-VU6">
-                                <rect key="frame" x="67" y="154" width="240" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-N1-pb2">
+                                <rect key="frame" x="69" y="368" width="237" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="gu2-fp-RcG"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-N1-pb2">
-                                <rect key="frame" x="80" y="333" width="214" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smart" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-X6-xou">
+                                <rect key="frame" x="69" y="442" width="237" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="xaY-3b-GsJ"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smart" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-X6-xou">
-                                <rect key="frame" x="80" y="416" width="214" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch photo" translatesAutoresizingMaskIntoConstraints="NO" id="82W-Co-VU6">
+                                <rect key="frame" x="69" y="164" width="237" height="195"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.4392156862745098" green="0.45882352941176469" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44313725490196076" green="0.45882352941176469" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="82W-Co-VU6" firstAttribute="leading" secondItem="cKr-N1-pb2" secondAttribute="leading" id="5wC-UO-w81"/>
+                            <constraint firstItem="82W-Co-VU6" firstAttribute="trailing" secondItem="cKr-N1-pb2" secondAttribute="trailing" id="8q2-Fa-152"/>
+                            <constraint firstItem="82W-Co-VU6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SUb-5A-KpM"/>
+                            <constraint firstItem="82W-Co-VU6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="144" id="TVQ-X0-6rl"/>
+                            <constraint firstItem="cKr-N1-pb2" firstAttribute="top" secondItem="82W-Co-VU6" secondAttribute="bottom" constant="9" id="Umb-0L-VQI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KPX-X6-xou" secondAttribute="bottom" constant="158" id="VjO-Fd-ZPZ"/>
+                            <constraint firstItem="KPX-X6-xou" firstAttribute="top" secondItem="cKr-N1-pb2" secondAttribute="bottom" constant="7" id="Zpb-ew-xUO"/>
+                            <constraint firstItem="cKr-N1-pb2" firstAttribute="leading" secondItem="KPX-X6-xou" secondAttribute="leading" id="bJJ-M2-Erx"/>
+                            <constraint firstItem="82W-Co-VU6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="gKu-fd-lej"/>
+                            <constraint firstItem="cKr-N1-pb2" firstAttribute="trailing" secondItem="KPX-X6-xou" secondAttribute="trailing" id="kAA-Rs-Cy7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.399999999999999" y="373.76311844077964"/>
         </scene>
     </scenes>
     <resources>
