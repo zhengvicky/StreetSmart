@@ -15,6 +15,9 @@
 		863448DF220F50500043AA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863448DD220F50500043AA6B /* LaunchScreen.storyboard */; };
 		863448EA220F50500043AA6B /* StreetSmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863448E9220F50500043AA6B /* StreetSmartTests.swift */; };
 		863448F5220F50500043AA6B /* StreetSmartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863448F4220F50500043AA6B /* StreetSmartUITests.swift */; };
+		86E46C05232463F7008264E5 /* crime.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86E46C04232463F6008264E5 /* crime.txt */; };
+		86E46C06232463F7008264E5 /* crime.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86E46C04232463F6008264E5 /* crime.txt */; };
+		86E46C07232463F7008264E5 /* crime.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86E46C04232463F6008264E5 /* crime.txt */; };
 		FD42E7CB220F6CB600919030 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD42E7CA220F6CB600919030 /* SettingsViewController.swift */; };
 		FD42E7CF220F789000919030 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD42E7CE220F789000919030 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +54,7 @@
 		863448F0220F50500043AA6B /* StreetSmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetSmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		863448F4220F50500043AA6B /* StreetSmartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetSmartUITests.swift; sourceTree = "<group>"; };
 		863448F6220F50500043AA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E46C04232463F6008264E5 /* crime.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.txt; sourceTree = "<group>"; };
 		FD42E7CA220F6CB600919030 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FD42E7CE220F789000919030 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,7 @@
 				863448DB220F50500043AA6B /* Assets.xcassets */,
 				863448DD220F50500043AA6B /* LaunchScreen.storyboard */,
 				863448E0220F50500043AA6B /* Info.plist */,
+				86E46C04232463F6008264E5 /* crime.txt */,
 			);
 			path = StreetSmart;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				863448DF220F50500043AA6B /* LaunchScreen.storyboard in Resources */,
 				863448DC220F50500043AA6B /* Assets.xcassets in Resources */,
 				863448DA220F504C0043AA6B /* Main.storyboard in Resources */,
+				86E46C05232463F7008264E5 /* crime.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E46C06232463F7008264E5 /* crime.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E46C07232463F7008264E5 /* crime.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

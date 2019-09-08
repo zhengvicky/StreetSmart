@@ -10,6 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var crimeDes = "hello"
     
     @IBOutlet var crimeDescription: UITextView!
     @IBOutlet weak var submitButton: UIButton!
@@ -22,7 +23,10 @@ class SecondViewController: UIViewController {
         
     }
     @IBAction func submit(_ sender: Any) {
+        crimeDes = crimeDescription.text
+        print(crimeDes)
         self.dismiss(animated: true, completion: nil)
+        
     }
 }
 
