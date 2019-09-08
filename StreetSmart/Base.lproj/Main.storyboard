@@ -299,6 +299,8 @@
                     <tabBarItem key="tabBarItem" title="Report Form" image="FORM" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="crimeDescription" destination="Gui-Hz-mI7" id="8hX-AU-kgx"/>
+                        <outlet property="crimeName" destination="NFF-Zq-oVD" id="cWM-iv-Fjd"/>
+                        <outlet property="crimeOffender" destination="NBG-7o-pSx" id="bXF-JG-mpS"/>
                         <outlet property="submitButton" destination="aE5-ZW-Br7" id="CrW-rg-QMY"/>
                     </connections>
                 </viewController>
